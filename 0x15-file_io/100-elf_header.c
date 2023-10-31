@@ -18,7 +18,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf_file - It displays the information contained in the ELF header file
+ * check_elf - Displays the details contained in the ELF header file
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: Check if the txt file is not an ELF file - exit code 98.
@@ -42,7 +42,7 @@ void check_elf(unsigned char *e_ident)
 
 /**
  * print_magic - Prints the magic n0 of an ELF header file.
- * @e_ident: The pointer that points to an array which contains the ELF magic numbers.
+ * @e_ident: pointer points to an array that contains the ELF magic numbers.
  *
  * Description: The magic numbers will be separated by spaces.
  */
@@ -89,7 +89,7 @@ void print_class(unsigned char *e_ident)
 
 /**
  * print_data - This Prints the data of an ELF header file.
- * @e_ident: The pointer that points to an array that contains the ELF class.
+ * @e_ident: Pointer that points to an array that contains the ELF class.
  */
 void print_data(unsigned char *e_ident)
 {
@@ -112,9 +112,9 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- *  * print_version - This prints the version of an ELF header file.
- *   * @e_ident: The pointer that points to an array which contains the ELF version.
- *    */
+ * print_version - This prints the version of an ELF header file.
+ * @e_ident: Pointer that points to an array which contains the ELF version.
+ */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
